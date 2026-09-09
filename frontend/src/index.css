@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --transition-timing-premium: cubic-bezier(0.16, 1, 0.3, 1);
+  
+  /* Apple HIG Theme Accent Colors */
+  --color-primary-blue: #4F7CFF;
+  --color-success-green: #22C55E;
+  --color-danger-red: #EF4444;
+  --color-warning-orange: #F59E0B;
+  --color-neutral-text: #1F2937;
+  --color-secondary-text: #6B7280;
+  --color-border-custom: #ECECF3;
+}
+
+:root {
+  --surface-page: #F5F6F8;
+  --surface-card: #FFFFFF;
+  --surface-muted: #FAFAFC;
+  --text-primary: #1F2937;
+  --text-secondary: #6B7280;
+  --border-color: #ECECF3;
+}
+
+:root.dark {
+  --surface-page: #101B1A;
+  --surface-card: #1C2A28;
+  --surface-muted: #172421;
+  --text-primary: #F0F7F4;
+  --text-secondary: #A9BCB6;
+  --border-color: #344A46;
+  --accent-dark: #62C7B5;
+  --accent-dark-soft: #21423C;
+  color-scheme: dark;
+}
+
+/* Global Reset with Apple HIG system Background */
+html, body {
+  font-family: var(--font-sans);
+  background-color: var(--surface-page);
+  background: var(--surface-page);
+  color: var(--text-secondary);
+  scroll-behavior: smooth;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease;
+}
+
+.dark .bg-white,
+.dark .bg-white\/70,
+.dark .bg-white\/85,
+.dark .bg-white\/90,
+.dark .bg-\[\#FFFFFF\] {
+  background-color: var(--surface-card) !important;
+}
+
+.dark .bg-\[\#FAFAFC\],
+.dark .bg-zinc-50 {
+  background-color: var(--surface-muted) !important;
+}
+
+/* Rebalance the original periwinkle accents for the dark clinical palette. */
+.dark [class*="bg-[#4F7CFF]"] {
+  background-color: var(--accent-dark) !important;
+}
+
+.dark [class*="bg-[#EDF2FF]"] {
+  background-color: var(--accent-dark-soft) !important;
+}
+
+.dark [class*="text-[#4F7CFF]"] {
+  color: var(--accent-dark) !important;
+}
+
+.dark [class*="border-[#4F7CFF]"] {
+  border-color: color-mix(in srgb, var(--accent-dark) 35%, transparent) !important;
+}
+
+.dark svg [stroke="#4F7CFF"] {
+  stroke: var(--accent-dark);
+}
+
+.dark svg [fill="#4F7CFF"] {
+  fill: var(--accent-dark);
+}
+
+.dark .text-zinc-800,
+.dark .text-zinc-700,
+.dark .text-zinc-900,
+.dark .text-gray-900 {
+  color: var(--text-primary) !important;
+}
+
+.dark .text-zinc-500,
+.dark .text-zinc-400,
+.dark .text-gray-500,
+.dark .text-gray-600 {
+  color: var(--text-secondary) !important;
+}
+
+.dark .border-\[\#ECECF3\],
+.dark .border-\[\#ECECF3\]\/60,
+.dark .border-\[\#ECECF3\]\/80,
+.dark .border-\[\#ECECF3\]\/50 {
+  border-color: var(--border-color) !important;
+}
+
+.dark input,
+.dark select,
+.dark textarea {
+  color: var(--text-primary);
+  background-color: var(--surface-muted);
+  border-color: var(--border-color);
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #8792A5;
+}
+
+.dark .glass-navbar {
+  background: rgba(17, 24, 39, 0.78);
+  border-color: rgba(55, 65, 81, 0.8);
+}
+
+.dark .glass-card-subtle {
+  background: rgba(31, 41, 55, 0.88);
+  border-color: rgba(55, 65, 81, 0.8);
+}
+
+/* Slim scrollbar matching Apple style */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ECECF3;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4F7CFF;
+}
+
+/* Reusable Glassmorphism classes */
+.glass-navbar {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(236, 236, 243, 0.6);
+}
+
+.glass-card-subtle {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(236, 236, 243, 0.7);
+}
+
+.layout-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}

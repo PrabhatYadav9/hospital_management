@@ -1,0 +1,167 @@
+// Dummy patient records for the Hospital Patient Management System
+export const dummyPatients = [
+  {
+    id: "PT-1001",
+    name: "John Doe",
+    age: 45,
+    gender: "Male",
+    disease: "Cardiovascular Disease",
+    doctor: "Dr. Sarah Jenkins",
+    phone: "+1 (555) 123-4567",
+    address: "123 Maple St, Springfield, OR",
+    emergencyContact: "Jane Doe (Wife) - +1 (555) 123-4568",
+    admissionDate: "2026-07-10",
+    status: "Admitted"
+  },
+  {
+    id: "PT-1002",
+    name: "Emily Watson",
+    age: 29,
+    gender: "Female",
+    disease: "Acute Appendicitis",
+    doctor: "Dr. Robert Chen",
+    phone: "+1 (555) 234-5678",
+    address: "456 Oak Ave, Portland, OR",
+    emergencyContact: "Michael Watson (Father) - +1 (555) 234-5679",
+    admissionDate: "2026-07-14",
+    status: "Admitted"
+  },
+  {
+    id: "PT-1003",
+    name: "Robert Johnson",
+    age: 62,
+    gender: "Male",
+    disease: "Type 2 Diabetes Mellitus",
+    doctor: "Dr. Alisha Patel",
+    phone: "+1 (555) 345-6789",
+    address: "789 Pine Rd, Eugene, OR",
+    emergencyContact: "Susan Johnson (Wife) - +1 (555) 345-6780",
+    admissionDate: "2026-06-25",
+    status: "Discharged"
+  },
+  {
+    id: "PT-1004",
+    name: "Sophia Martinez",
+    age: 34,
+    gender: "Female",
+    disease: "Pneumonia",
+    doctor: "Dr. Sarah Jenkins",
+    phone: "+1 (555) 456-7890",
+    address: "101 Cedar Ln, Salem, OR",
+    emergencyContact: "Carlos Martinez (Brother) - +1 (555) 456-7891",
+    admissionDate: "2026-07-08",
+    status: "Admitted"
+  },
+  {
+    id: "PT-1005",
+    name: "William Davis",
+    age: 50,
+    gender: "Male",
+    disease: "Chronic Kidney Disease",
+    doctor: "Dr. David Kim",
+    phone: "+1 (555) 567-8901",
+    address: "202 Birch Blvd, Bend, OR",
+    emergencyContact: "Mary Davis (Mother) - +1 (555) 567-8902",
+    admissionDate: "2026-07-01",
+    status: "Admitted"
+  },
+  {
+    id: "PT-1006",
+    name: "Olivia Taylor",
+    age: 18,
+    gender: "Female",
+    disease: "Gastroenteritis",
+    doctor: "Dr. Robert Chen",
+    phone: "+1 (555) 678-9012",
+    address: "303 Elm St, Medford, OR",
+    emergencyContact: "James Taylor (Father) - +1 (555) 678-9013",
+    admissionDate: "2026-07-16",
+    status: "Discharged"
+  },
+  {
+    id: "PT-1007",
+    name: "James Wilson",
+    age: 71,
+    gender: "Male",
+    disease: "Hypertension",
+    doctor: "Dr. Alisha Patel",
+    phone: "+1 (555) 789-0123",
+    address: "404 Walnut Dr, Beaverton, OR",
+    emergencyContact: "Patricia Wilson (Daughter) - +1 (555) 789-0124",
+    admissionDate: "2026-05-12",
+    status: "Discharged"
+  },
+  {
+    id: "PT-1008",
+    name: "Isabella Anderson",
+    age: 41,
+    gender: "Female",
+    disease: "Migraine Disorder",
+    doctor: "Dr. Emily Wong",
+    phone: "+1 (555) 890-1234",
+    address: "505 Chestnut Pl, Hillsboro, OR",
+    emergencyContact: "Thomas Anderson (Husband) - +1 (555) 890-1235",
+    admissionDate: "2026-07-15",
+    status: "Admitted"
+  },
+  {
+    id: "PT-1009",
+    name: "Michael Thomas",
+    age: 58,
+    gender: "Male",
+    disease: "Osteoarthritis",
+    doctor: "Dr. David Kim",
+    phone: "+1 (555) 901-2345",
+    address: "606 Redwood Ter, Corvallis, OR",
+    emergencyContact: "Linda Thomas (Wife) - +1 (555) 901-2346",
+    admissionDate: "2026-06-18",
+    status: "Discharged"
+  },
+  {
+    id: "PT-1010",
+    name: "Charlotte White",
+    age: 26,
+    gender: "Female",
+    disease: "Bronchial Asthma",
+    doctor: "Dr. Emily Wong",
+    phone: "+1 (555) 012-3456",
+    address: "707 Sequoia Way, Ashland, OR",
+    emergencyContact: "Joseph White (Father) - +1 (555) 012-3457",
+    admissionDate: "2026-07-03",
+    status: "Admitted"
+  },
+  {
+    id: "PT-1011",
+    name: "Daniel Harris",
+    age: 48,
+    gender: "Male",
+    disease: "Cholecystitis",
+    doctor: "Dr. Robert Chen",
+    phone: "+1 (555) 123-9876",
+    address: "808 Cypress St, Gresham, OR",
+    emergencyContact: "Sarah Harris (Wife) - +1 (555) 123-9877",
+    admissionDate: "2026-07-11",
+    status: "Admitted"
+  },
+  {
+    id: "PT-1012",
+    name: "Amelia Martin",
+    age: 33,
+    gender: "Female",
+    disease: "Rheumatoid Arthritis",
+    doctor: "Dr. David Kim",
+    phone: "+1 (555) 234-8765",
+    address: "909 Sycamore Ct, Tigard, OR",
+    emergencyContact: "Robert Martin (Husband) - +1 (555) 234-8766",
+    admissionDate: "2026-06-30",
+    status: "Discharged"
+  }
+];
+
+export const dummyDoctors = [
+  "Dr. Sarah Jenkins",
+  "Dr. Robert Chen",
+  "Dr. Alisha Patel",
+  "Dr. David Kim",
+  "Dr. Emily Wong"
+];
